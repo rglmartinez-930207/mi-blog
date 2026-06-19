@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Desarrollo Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Bienvenido a mi Blog</h1>
-  <p>Este blog contiene tres entradas sencillas con texto e imágenes.</p>
 
-  <ul>
-    <li><a href="posts/post1.html">Entrada 1</a></li>
-    <li><a href="posts/post2.html">Entrada 2</a></li>
-    <li><a href="posts/post3.html">Entrada 3</a></li>
-  </ul>
+    <header class="main-header">
+        <div class="container header-flex">
+            <h1 class="logo">Dev<span>Blog</span></h1>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="#">Artículos</a>
+                <a href="#">Acerca de</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container blog-container">
+        <h2 class="section-title">Últimas Publicaciones</h2>
+        
+        <section class="posts-grid">
+            
+            <article class="post-card">
+                <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600" alt="Código HTML y CSS" class="post-img">
+                <div class="post-content">
+                    <span class="post-category">Frontend</span>
+                    <h3 class="post-title">Introducción a HTML5 y CSS3</h3>
+                    <p class="post-excerpt">Aprende las bases fundamentales para construir sitios web modernos, estructurados y con diseños asombrosos desde cero.</p>
+                    <a href="articulo.html" class="btn-read">Leer más →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600" alt="Diseño Web Adaptativo" class="post-img">
+                <div class="post-content">
+                    <span class="post-category">Diseño</span>
+                    <h3 class="post-title">El poder del Responsive Design</h3>
+                    <p class="post-excerpt">¿Tu sitio web se ve bien en teléfonos móviles? Descubre cómo usar Media Queries para adaptar tus diseños a cualquier pantalla.</p>
+                    <a href="articulo.html" class="btn-read">Leer más →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <img src="https://images.unsplash.com/photo-1618401471353-b98aedd07871?w=600" alt="Herramientas de desarrollo" class="post-img">
+                <div class="post-content">
+                    <span class="post-category">Herramientas</span>
+                    <h3 class="post-title">Flujo de trabajo eficiente</h3>
+                    <p class="post-excerpt">Optimiza tu tiempo utilizando herramientas esenciales de desarrollo, extensiones de código y buenas prácticas de maquetación.</p>
+                    <a href="articulo.html" class="btn-read">Leer más →</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 DevBlog. Desarrollado para la Actividad Práctica.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
